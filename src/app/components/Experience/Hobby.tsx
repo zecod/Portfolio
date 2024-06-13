@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
+
 export const Hobby = () => {
   useGSAP(() => {
     gsap.fromTo(
@@ -32,6 +33,7 @@ export const Hobby = () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
+
   return (
     <div className="md:h-[50vh] mt-20 space-y-5 mb-20 hobby-intro">
       <h2 className="flex items-center gap-1 stagger-hobby">
@@ -57,22 +59,22 @@ export const Hobby = () => {
       <div className="stagger-intro flex gap-5 flex-wrap stagger-hobby">
         <img
           src="https://www.vectorlogo.zone/logos/swift/swift-icon.svg"
-          alt="swift-ui"
+          alt="Swift UI logo"
           className="w-auto h-10 grayscale hover:grayscale-0 transition-all"
         />
         <img
           src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-          alt="react-native"
+          alt="React Native logo"
           className="w-auto h-10 grayscale hover:grayscale-0 transition-all"
         />
         <img
           src="https://www.vectorlogo.zone/logos/python/python-icon.svg"
-          alt="python"
+          alt="Python programming language logo"
           className="w-auto h-10 grayscale hover:grayscale-0 transition-all"
         />
         <img
           src="https://www.vectorlogo.zone/logos/php/php-ar21.svg"
-          alt="php"
+          alt="PHP programming language logo"
           className="w-auto h-10 grayscale hover:grayscale-0 transition-all"
         />
       </div>
